@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "mocha api/XX/XX.spec.js -w",
+    "test": "set NODE_ENV=test&&mocha -r @babel/register src/test/index.spec.js -w",
     "dev": "nodemon"
   },
   "author": "",
@@ -21,6 +21,7 @@
     "@babel/node": "^7.15.8",
     "@babel/plugin-transform-runtime": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
+    "@babel/register": "^7.15.3",
     "mocha": "^9.1.2",
     "nodemon": "^2.0.13",
     "should": "^13.2.3",
